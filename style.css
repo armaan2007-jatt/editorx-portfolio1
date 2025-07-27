@@ -1,0 +1,159 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0b0c2a;
+  color: #f0f0f0;
+  font-family: 'Orbitron', sans-serif;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: url('https://cdn.pixabay.com/photo/2017/08/30/07/52/gamer-2691189_1280.jpg') no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: rgba(5, 5, 30, 0.9);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+nav .logo {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 22px;
+  color: #00e0ff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #00e0ff;
+}
+
+.hero {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: #00ffae;
+}
+
+.hero p {
+  font-size: 22px;
+  color: #ffe600;
+}
+
+/* Sections */
+section {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 34px;
+  color: #00ffea;
+  margin-bottom: 20px;
+}
+
+.about-img {
+  max-width: 200px;
+  margin-top: 20px;
+  border-radius: 20px;
+  border: 2px solid #00ffae;
+}
+
+.videos {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.videos iframe {
+  width: 100%;
+  max-width: 420px;
+  height: 240px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #00ffe1;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+form input, form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #00ffcc;
+  background: #14142b;
+  color: #fff;
+  font-size: 16px;
+}
+
+form button {
+  padding: 12px;
+  background: #00ffcc;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #00ddb3;
+}
+
+.socials a {
+  color: #00e0ff;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+footer {
+  background: #070720;
+  padding: 20px;
+  text-align: center;
+  color: #777;
+  margin-top: 60px;
+}
